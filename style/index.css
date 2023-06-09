@@ -1,7 +1,7 @@
 /* CSS stillerinizi buraya girin */
 
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
   margin: 0;
   padding: 50px;
 }
@@ -10,13 +10,15 @@ h1,
 h3 {
   color: #d30340;
   padding: 10px 20px;
-  font: bold;
+  font: bolder;
   font-size: 30px;
 }
 
 h2 {
   font: bolder;
   font-size: 20px;
+  background-color: #4b6d5a;
+  color: aliceblue;
 }
 
 footer,
@@ -33,7 +35,7 @@ header nav a {
   display: flex;
   padding: 5px;
   border-color: #d30340;
-  color: #1d1746;
+  color: black;
   border-width: medium;
   border-radius: 5px;
   align-items: center;
@@ -52,6 +54,7 @@ main {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+  position:relative;
 }
 
 .main-img {
@@ -76,3 +79,31 @@ main {
 footer {
   justify-content: center;
 }
+
+
+/* ///////////RESPONSIVE MEDIA QUERY///////////////*/
+
+@media screen and (max-width:992px){
+body{
+  background-color: rgb(156, 164, 164);
+  align-content: center
+  align-items:center;
+  
+}
+nav button{
+  display: flex;
+  flex-direction: column;
+}
+}
+
+/*///////////TABLET/////////*/
+
+@media screen and (max-width:600px){
+  body{
+    background-color: rgb(38, 88, 180);
+  }
+  
+  }
+
+
+/*//////PHONE//////////*/
